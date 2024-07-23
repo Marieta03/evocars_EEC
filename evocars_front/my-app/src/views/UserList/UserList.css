@@ -1,0 +1,103 @@
+/* UserList.css */
+
+.user-list-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+.user-list-title {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.create-user-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #dc3545;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.create-user-button:hover {
+  background-color: #0056b3;
+}
+
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.user-table th,
+.user-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.user-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+  color: #333;
+}
+
+.user-table td {
+  color: #555;
+}
+
+.user-photo {
+  max-width: 100px;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.action-buttons {
+  display: flex;
+  flex-direction: column; /* Alinear los botones verticalmente */
+}
+
+.action-buttons .edit-button,
+.action-buttons .delete-button {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 14px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 8px; /* Espacio entre los botones */
+}
+
+.action-buttons .edit-button {
+  background-color: #dc3545;
+  color: #fff;
+  border: 1px solid #dc3545;
+}
+
+.action-buttons .edit-button:hover {
+  background-color: #0056b3;
+}
+
+.action-buttons .delete-button {
+  background-color: #dc3545;
+  color: #fff;
+  border: 1px solid #dc3545;
+}
+
+.action-buttons .delete-button:hover {
+  background-color: #c82333;
+}

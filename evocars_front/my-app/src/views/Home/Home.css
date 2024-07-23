@@ -1,0 +1,298 @@
+/* Tipografía */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  overflow-x: hidden; /* Evitar desplazamiento horizontal */
+}
+
+.home-page {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative; /* Necesario para el overlay y el background-container */
+  min-height: 100vh;
+}
+
+.background-container {
+  position: fixed; /* Fijar el fondo para que no se desplace al hacer scroll */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-image 1s ease-in-out;
+  z-index: -1;
+}
+
+.overlay {
+  position: fixed; /* Fijar la superposición para que no se desplace al hacer scroll */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  z-index: -1;
+}
+
+.home-page .container {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin: 0 auto;
+}
+
+.home-page .header {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.home-page .header .nav {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.home-page .logo {
+  display: flex;
+  align-items: center;
+}
+
+.home-page .logo img {
+  width: 100px;
+  height: auto;
+}
+
+.home-page .nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.home-page .nav li {
+  margin-left: 20px;
+}
+
+.home-page .nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.home-page .login-button {
+  background-color: #ff0000;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.home-page .main {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  background: transparent; /* Hacer que el fondo del main sea transparente */
+}
+
+.home-page .menu-space {
+  height: 80px; /* Ajusta la altura según el tamaño del menú */
+}
+
+.home-page .hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  flex-wrap: wrap; /* Para que los elementos se ajusten en pantallas más pequeñas */
+  background-color: #000; /* Fondo negro para la sección hero */
+  color: #fff; /* Asegurarse de que el texto sea visible sobre el fondo negro */
+}
+
+.home-page .hero-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  width: 40%;
+}
+
+.home-page .hero-text h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.home-page .hero-text p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.home-page .hero-text button {
+  background-color: #ff0000;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.home-page .hero-image {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.home-page .hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Asegurarse de que la imagen cubra todo el contenedor */
+}
+
+.home-page .about {
+  text-align: center;
+  width: 100%;
+  background-color: #fff;
+  color: #000;
+  padding: -5px;
+}
+
+.home-page .about-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto; /* Centramos el contenido dentro del contenedor */
+}
+
+.home-page .about-logo {
+  width: 150px; /* Aumentar el tamaño del logo */
+  height: auto;
+  margin-right: 20px;
+}
+
+.home-page .about-text {
+  text-align: left;
+  max-width: 70%; /* Reducir el ancho del párrafo */
+}
+
+.home-page .about h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.home-page .about p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.home-page .read-more-button {
+  background-color: #ff0000;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.home-page .developers {
+  text-align: center;
+  width: 100%;
+  background-color: #fff;
+  color: #000;
+  padding: -5px;
+}
+
+.home-page .developers h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.home-page .developer {
+  display: flex;
+  justify-content: center;
+  gap: 200px; /* Espacio entre tarjetas de desarrollador */
+  margin-top: 40px; /* Espacio superior */
+}
+
+.home-page .developer-info {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  perspective: 1000px; /* Profundidad de la perspectiva */
+  cursor: pointer;
+}
+
+.home-page .developer-info .front,
+.home-page .developer-info .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s ease; /* Transición suave */
+  backface-visibility: hidden; /* Ocultar la cara posterior */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.home-page .developer-info .front {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-page .developer-info .back {
+  background-color: #ff0000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: rotateY(180deg); /* Inicialmente volteado */
+}
+
+.home-page .developer-info.flipped .front {
+  transform: rotateY(180deg); /* Voltear hacia atrás */
+}
+
+.home-page .developer-info.flipped .back {
+  transform: rotateY(0deg); /* Voltear hacia adelante */
+}
+
+.home-page .developer-info p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.home-page .footer {
+  width: 200%;
+  padding: 15px;
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+  position: relative;
+  left: 0;
+  bottom: 0;
+}
+
+.home-page .footer p {
+  margin: 0;
+}
+.red-text {
+  color: #ff0000; /* Código de color rojo */
+}
